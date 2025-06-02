@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
