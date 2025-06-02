@@ -74,28 +74,39 @@ export default function Home() {
             Hire Me Now
           </a>
         </div>
-        <div className="lg:w-1/2 flex justify-center relative mb-10 lg:mb-0">
-          <div className="w-full max-w-[300px] flex items-center justify-center">
-            <img
-              src="/my-app/public/image/Untitled design (2) - Copy.png"
-              alt="Saira"
-              className="w-64 object-contain rounded-t-[100px] rounded-b-xl shadow-xl"
-            />
-          </div>
-        </div>
+   <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0 relative">
+  <div className="w-[300px] h-[400px] rounded-3xl relative overflow-hidden flex items-center justify-center bg-white/10 backdrop-blur-md shadow-xl">
+    
+    {/* Ornamen blur abstrak di belakang */}
+    <div className="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-green-300 opacity-30 filter blur-3xl"></div>
+    <div className="absolute -bottom-12 -right-12 w-32 h-32 rounded-full bg-yellow-300 opacity-20 filter blur-4xl"></div>
+    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-20 h-20 rounded-full bg-pink-300 opacity-25 filter blur-2xl"></div>
+
+    {/* Gambar full tanpa clip-path */}
+    <img
+      src="/image/2.png"
+      alt="About Me"
+      className="w-full h-full object-cover rounded-3xl"
+      draggable={false}
+    />
+  </div>
+</div>
+
+
       </section>
 
       {/* About Section */}
       <section data-aos="fade-up" className="flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-24 py-16">
-        <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0">
-          <div className="w-full max-w-[300px] flex items-center justify-center">
-            <img
-              src="/f56f1e26-b895-425b-9e16-09bd817dba99.png"
-              alt="About Me"
-              className="w-full object-contain drop-shadow-xl"
-            />
-          </div>
-        </div>
+        <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0 relative">
+  <div className="w-[300px] h-[400px] rounded-full overflow-hidden relative flex items-center justify-center before:absolute before:-top-6 before:-left-6 before:w-24 before:h-24 before:rounded-full before:bg-green-300 before:blur-xl before:opacity-60 after:absolute after:-bottom-6 after:-right-6 after:w-24 after:h-24 after:rounded-full after:bg-yellow-200 after:blur-2xl after:opacity-50">
+    <img
+      src="/image/1.png"
+      alt="About Me"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
         <div className="lg:w-1/2 text-center lg:text-left">
           <h3 className="text-3xl font-bold mb-4">Bit About Me</h3>
           <p className="mb-6 text-base sm:text-lg">
