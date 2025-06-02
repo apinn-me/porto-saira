@@ -55,15 +55,19 @@ export default function About() {
 
       {/* About Page Content */}
       <section data-aos="fade-up" className="flex flex-col lg:flex-row items-center px-4 sm:px-6 lg:px-24 py-16">
-<div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0 relative">
-  <div className="w-[300px] h-[400px] rounded-full overflow-hidden relative flex items-center justify-center before:absolute before:-top-6 before:-left-6 before:w-24 before:h-24 before:rounded-full before:bg-green-300 before:blur-xl before:opacity-60 after:absolute after:-bottom-6 after:-right-6 after:w-24 after:h-24 after:rounded-full after:bg-yellow-200 after:blur-2xl after:opacity-50">
-    <img
-      src="/image/1.png"
-      alt="About Me"
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
+        <div className="lg:w-1/2 flex justify-center mb-10 lg:mb-0 relative">
+          <div className="w-[300px] h-[400px] rounded-full overflow-hidden relative flex items-center justify-center before:absolute before:-top-6 before:-left-6 before:w-24 before:h-24 before:rounded-full before:bg-green-300 before:blur-xl before:opacity-60 after:absolute after:-bottom-6 after:-right-6 after:w-24 after:h-24 after:rounded-full after:bg-yellow-200 after:blur-2xl after:opacity-50">
+            <Image
+              src="/image/1.png"
+              alt="About Me"
+              width={300}
+              height={400}
+              className="w-full h-full object-cover rounded-3xl"
+              draggable={false}
+            />
+
+          </div>
+        </div>
 
 
 
