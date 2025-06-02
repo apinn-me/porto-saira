@@ -65,16 +65,13 @@ export default function About() {
               className="w-full h-full object-cover rounded-3xl"
               draggable={false}
             />
-
           </div>
         </div>
-
-
 
         <div className="lg:w-1/2 text-center lg:text-left">
           <h3 className="text-4xl font-bold mb-4">About Me</h3>
           <p className="mb-6 text-base sm:text-lg">
-            Saya adalah seorang fotografer dan desainer grafis yang berdedikasi dan penuh semangat. Saya mencintai dunia visual dan percaya bahwa setiap karya memiliki cerita yang bisa diceritakan melalui warna, bentuk, dan komposisi.
+            Saya adalah seorang fotografer dan desainer grafis yang berdedikasi dan penuh semangat. Saya mencintai dunia visual dan percaya bahwa setiap karya memiliki cerita melalui warna, bentuk, dan komposisi.
           </p>
           <a href="#" className="inline-block bg-white text-pink-500 font-bold px-6 py-3 rounded-full shadow hover:bg-pink-200 transition">
             Download CV

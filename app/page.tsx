@@ -165,20 +165,28 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section data-aos="fade-up" className="py-16 px-4 sm:px-6 lg:px-24 text-center">
-        <h3 className="text-3xl font-bold mb-10">My Portfolio</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform">
-              <img src={`/portfolio${item}.jpg`} alt={`Portfolio ${item}`} className="w-full h-48 object-cover" />
-              <div className="p-4">
-                <h4 className="text-lg font-semibold mb-2">Project Title {item}</h4>
-                <p className="text-sm">Deskripsi singkat tentang proyek ini dan hasil yang dicapai.</p>
-              </div>
-            </div>
-          ))}
+<section data-aos="fade-up" className="py-16 px-4 sm:px-6 lg:px-24 text-center">
+  <h3 className="text-3xl font-bold mb-10">My Portfolio</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {[1, 2, 3, 4, 5, 6].map((item) => (
+      <div key={item} className="bg-white bg-opacity-20 backdrop-blur-md rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform">
+        <div className="relative w-full h-48">
+          <Image
+            src={`/portfolio${item}.jpg`}
+            alt={`Portfolio ${item}`}
+            fill
+            className="object-cover"
+          />
         </div>
-      </section>
+        <div className="p-4">
+          <h4 className="text-lg font-semibold mb-2">Project Title {item}</h4>
+          <p className="text-sm">Deskripsi singkat tentang proyek ini dan hasil yang dicapai.</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Testimonial Section */}
       <section data-aos="fade-up" className="bg-white py-16 px-4 sm:px-6 lg:px-24 text-center text-gray-800">
