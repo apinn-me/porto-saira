@@ -81,7 +81,7 @@ export default function About() {
 
       {/* Footer */}
       <footer className="bg-pink-500 py-12 px-4 sm:px-6 lg:px-24 text-center">
-        <h4 className="text-xl font-semibold mb-4">Let's Connect!</h4>
+        <h4 className="text-xl font-semibold mb-4">Let&#39;s Connect!</h4>
         <p className="mb-6">Tertarik bekerja sama? Jangan ragu untuk menghubungi saya kapan saja.</p>
         <div className="flex flex-wrap justify-center gap-4 text-white mb-6">
           {['Facebook', 'Instagram', 'LinkedIn', 'GitHub'].map((platform, i) => (
