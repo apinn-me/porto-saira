@@ -23,7 +23,7 @@ export default function About() {
         </h1>
 
         <nav className="hidden md:flex gap-6 font-medium">
-         
+          <Link href="/" className="hover:text-pink-100">Home</Link>
           <Link href="/about" className="hover:text-pink-100">About</Link>
           <Link href="/service" className="hover:text-pink-100">Service</Link>
           <Link href="/portfolio" className="hover:text-pink-100">Portfolio</Link>
