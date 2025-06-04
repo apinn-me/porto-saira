@@ -5,6 +5,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from 'next/link';
 import Image from 'next/image';
+    import {
+  Monitor,
+  ShoppingCart,
+  Smartphone,
+  Search,
+  Megaphone,
+  Palette,
+} from "lucide-react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,43 +123,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section data-aos="fade-up" className="bg-pink-200 py-16 px-4 sm:px-6 lg:px-24 text-center">
-        <h3 className="text-3xl font-bold mb-10 text-gray-800">My Best Services</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Website Design",
-              desc: "Mendesain website yang estetis dan responsif untuk pengalaman pengguna yang optimal.",
-            },
-            {
-              title: "Ecommerce Solutions",
-              desc: "Membangun platform jual beli online lengkap dengan sistem checkout dan payment gateway.",
-            },
-            {
-              title: "Mobile Development",
-              desc: "Pengembangan aplikasi Android dan iOS yang ringan, cepat, dan mudah digunakan.",
-            },
-            {
-              title: "SEO Optimization",
-              desc: "Meningkatkan peringkat website di mesin pencari dengan teknik SEO terbaru.",
-            },
-            {
-              title: "Digital Marketing",
-              desc: "Strategi pemasaran digital yang efektif untuk menjangkau audiens secara luas.",
-            },
-            {
-              title: "UI/UX Design",
-              desc: "Menciptakan desain antarmuka dan pengalaman pengguna yang menarik dan intuitif.",
-            },
-          ].map((service, index) => (
-            <div key={index} className="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-xl shadow-md transform transition-transform hover:scale-105 hover:bg-opacity-30">
-              <h4 className="text-xl font-semibold mb-2 text-sm text-gray-700">{service.title}</h4>
-              <p className="text-sm text-gray-700">{service.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+
+{/* Services Section */}
+<section data-aos="fade-up" className="bg-pink-200 py-16 px-4 sm:px-6 lg:px-24 text-center">
+  <h3 className="text-3xl font-bold mb-10 text-gray-800">My Best Services</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {[
+      {
+        icon: <Monitor size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "Website Design",
+        desc: "Mendesain website yang estetis dan responsif untuk pengalaman pengguna yang optimal.",
+      },
+      {
+        icon: <ShoppingCart size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "Ecommerce Solutions",
+        desc: "Membangun platform jual beli online lengkap dengan sistem checkout dan payment gateway.",
+      },
+      {
+        icon: <Smartphone size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "Mobile Development",
+        desc: "Pengembangan aplikasi Android dan iOS yang ringan, cepat, dan mudah digunakan.",
+      },
+      {
+        icon: <Search size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "SEO Optimization",
+        desc: "Meningkatkan peringkat website di mesin pencari dengan teknik SEO terbaru.",
+      },
+      {
+        icon: <Megaphone size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "Digital Marketing",
+        desc: "Strategi pemasaran digital yang efektif untuk menjangkau audiens secara luas.",
+      },
+      {
+        icon: <Palette size={40} className="text-pink-600 mb-4 mx-auto" />,
+        title: "UI/UX Design",
+        desc: "Menciptakan desain antarmuka dan pengalaman pengguna yang menarik dan intuitif.",
+      },
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="bg-white bg-opacity-20 backdrop-blur-md p-6 rounded-xl shadow-md transform transition-transform hover:scale-105 hover:bg-opacity-30"
+      >
+        {service.icon}
+        <h4 className="text-xl font-semibold mb-2 text-gray-700">{service.title}</h4>
+        <p className="text-sm text-gray-700">{service.desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Portfolio Section */}
       <section data-aos="fade-up" className="py-16 px-4 sm:px-6 lg:px-24 text-center">
