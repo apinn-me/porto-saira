@@ -170,7 +170,7 @@ export default function Home() {
         <p className="mb-6">Tertarik membangun sistem pintar atau smart device? Hubungi saya sekarang juga.</p>
         <div className="flex flex-wrap justify-center gap-4 text-white mb-6">
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">Facebook</a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">Instagram</a>
+          <a href="https://www.instagram.com/" target="https://www.instagram.com/meaane_/" rel="noopener noreferrer" className="hover:text-pink-200">Instagram</a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">LinkedIn</a>
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">GitHub</a>
         </div>
