@@ -79,12 +79,11 @@ export default function About() {
         </div>
       </section>
 
-    {/* Education Section */}
-<section data-aos="fade-up" className="relative px-4 sm:px-6 lg:px-24 py-16 text-center text-gray-900 rounded-b-3xl overflow-hidden">
+ <section data-aos="fade-up" className="relative mt-24 px-4 sm:px-6 lg:px-24 py-16 text-center text-gray-900 rounded-b-3xl overflow-hidden">
   {/* Background Gradient */}
   <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-blue-50 to-purple-100 opacity-80 -z-10" />
 
-  {/* Decorative Circles */}
+  {/* Decorative Blobs */}
   <div className="absolute -top-10 -left-10 w-40 h-40 bg-pink-200 rounded-full filter blur-3xl opacity-30 -z-10" />
   <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-200 rounded-full filter blur-3xl opacity-40 -z-10" />
 
@@ -94,28 +93,26 @@ export default function About() {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {[
       {
+        icon: "📘",
         institution: "SD Negeri 01 Harapan",
         level: "Sekolah Dasar",
-        years: "2010 - 2016",
-        image: "/images/sd.jpg"
+        years: "2010 - 2016"
       },
       {
+        icon: "📗",
         institution: "SMP Negeri 2 Cipta Karya",
         level: "Sekolah Menengah Pertama",
-        years: "2016 - 2019",
-        image: "/images/smp.jpg"
+        years: "2016 - 2019"
       },
       {
+        icon: "📙",
         institution: "SMK Negeri 1 Teknologi",
         level: "Teknik Elektronika Industri",
-        years: "2019 - 2022",
-        image: "/images/smk.jpg"
+        years: "2019 - 2022"
       }
     ].map((edu, idx) => (
-      <div key={idx} className="bg-white/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
-        <div className="mb-4 h-32 overflow-hidden rounded-lg flex items-center justify-center bg-gray-100">
-          <img src={edu.image} alt={edu.institution} className="h-full w-full object-cover" />
-        </div>
+      <div key={idx} className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition duration-300">
+        <div className="mb-4 text-5xl">{edu.icon}</div>
         <h4 className="text-lg font-semibold mb-1">{edu.institution}</h4>
         <p className="text-sm text-gray-600 italic mb-1">{edu.level}</p>
         <p className="text-sm text-gray-500">{edu.years}</p>
@@ -123,6 +120,7 @@ export default function About() {
     ))}
   </div>
 </section>
+
 
 
     <section data-aos="fade-up" className="mt-24 px-4 sm:px-6 lg:px-24 py-16 text-center bg-white text-gray-900 rounded-t-3xl shadow-inner">
