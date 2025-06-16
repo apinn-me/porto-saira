@@ -79,52 +79,89 @@ export default function About() {
         </div>
       </section>
 
-      {/* My Work Section */}
-      <section data-aos="fade-up" className="px-4 sm:px-6 lg:px-24 py-16 text-center bg-white text-gray-900 rounded-t-3xl shadow-inner">
-        <h3 className="text-4xl font-bold mb-2">IoT Projects</h3>
-        <p className="mb-10 text-gray-600">Berikut beberapa proyek IoT yang telah saya kembangkan.</p>
+    {/* Education Section */}
+<section data-aos="fade-up" className="relative px-4 sm:px-6 lg:px-24 py-16 text-center text-gray-900 rounded-b-3xl overflow-hidden">
+  {/* Background Gradient */}
+  <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-blue-50 to-purple-100 opacity-80 -z-10" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Smart Plant Watering",
-              desc: "Sistem penyiram tanaman otomatis berbasis kelembaban tanah menggunakan ESP32 dan pompa.",
-            },
-            {
-              title: "IoT Air Quality Monitor",
-              desc: "Alat pemantau kualitas udara (CO2, PM2.5) dengan notifikasi real-time ke dashboard.",
-            },
-            {
-              title: "RFID Door Lock System",
-              desc: "Sistem pengaman pintu berbasis kartu RFID yang terintegrasi dengan ESP32.",
-            },
-            {
-              title: "Smart Energy Meter",
-              desc: "Pengukur energi listrik rumah tangga dengan sensor arus non-invasif dan tampilan via web.",
-            },
-            {
-              title: "Remote Temp Control",
-              desc: "Pengontrol suhu ruangan menggunakan sensor DHT22 dan fan otomatis.",
-            },
-            {
-              title: "Firebase Weather Logger",
-              desc: "Stasiun cuaca mini yang mengirim data suhu dan kelembaban ke Firebase Realtime DB.",
-            }
-          ].map((project, idx) => (
-            <div key={idx} className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
-              <div className="mb-4 h-32 bg-gradient-to-tr from-pink-100 via-pink-200 to-white rounded-lg flex items-center justify-center">
-                <span className="text-gray-400 text-sm italic">[Thumbnail]</span>
-              </div>
-              <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
-              <p className="text-sm text-gray-700 mb-4">{project.desc}</p>
-              <div className="flex gap-3 justify-center text-pink-500 text-xl">
-                <a href="#" className="hover:text-pink-300">🔗</a>
-                <a href="#" className="hover:text-pink-300">📁</a>
-              </div>
-            </div>
-          ))}
+  {/* Decorative Circles */}
+  <div className="absolute -top-10 -left-10 w-40 h-40 bg-pink-200 rounded-full filter blur-3xl opacity-30 -z-10" />
+  <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-200 rounded-full filter blur-3xl opacity-40 -z-10" />
+
+  <h3 className="text-4xl font-bold mb-2">Riwayat Pendidikan</h3>
+  <p className="mb-10 text-gray-700">Perjalanan pendidikan saya hingga tingkat menengah atas.</p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        institution: "SD Negeri 01 Harapan",
+        level: "Sekolah Dasar",
+        years: "2010 - 2016",
+        image: "/images/sd.jpg"
+      },
+      {
+        institution: "SMP Negeri 2 Cipta Karya",
+        level: "Sekolah Menengah Pertama",
+        years: "2016 - 2019",
+        image: "/images/smp.jpg"
+      },
+      {
+        institution: "SMK Negeri 1 Teknologi",
+        level: "Teknik Elektronika Industri",
+        years: "2019 - 2022",
+        image: "/images/smk.jpg"
+      }
+    ].map((edu, idx) => (
+      <div key={idx} className="bg-white/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
+        <div className="mb-4 h-32 overflow-hidden rounded-lg flex items-center justify-center bg-gray-100">
+          <img src={edu.image} alt={edu.institution} className="h-full w-full object-cover" />
         </div>
-      </section>
+        <h4 className="text-lg font-semibold mb-1">{edu.institution}</h4>
+        <p className="text-sm text-gray-600 italic mb-1">{edu.level}</p>
+        <p className="text-sm text-gray-500">{edu.years}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+    <section data-aos="fade-up" className="mt-24 px-4 sm:px-6 lg:px-24 py-16 text-center bg-white text-gray-900 rounded-t-3xl shadow-inner">
+  <h3 className="text-4xl font-bold mb-2">IoT Projects</h3>
+  <p className="mb-10 text-gray-600">Berikut beberapa proyek IoT yang telah saya kembangkan.</p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        title: "Smart Plant Watering",
+        desc: "Sistem penyiram tanaman otomatis berbasis kelembaban tanah menggunakan ESP32 dan pompa.",
+        image: "./image/4.jpg"
+      },
+      {
+        title: "IoT Air Quality Monitor",
+        desc: "Alat pemantau kualitas udara (CO2, PM2.5) dengan notifikasi real-time ke dashboard.",
+        image: "/images/air-quality.jpg"
+      },
+      {
+        title: "RFID Door Lock System",
+        desc: "Sistem pengaman pintu berbasis kartu RFID yang terintegrasi dengan ESP32.",
+        image: "/images/rfid-door-lock.jpg"
+      },
+   
+    ].map((project, idx) => (
+      <div key={idx} className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
+        <div className="mb-4 h-32 overflow-hidden rounded-lg flex items-center justify-center bg-gray-100">
+          <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
+        </div>
+        <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
+        <p className="text-sm text-gray-700 mb-4">{project.desc}</p>
+        <div className="flex gap-3 justify-center text-pink-500 text-xl">
+          {/* Tambahkan link jika diperlukan */}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer id="contact" className="bg-pink-500 py-12 px-4 sm:px-6 lg:px-24 text-center">
