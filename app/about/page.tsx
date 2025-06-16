@@ -121,7 +121,7 @@ export default function About() {
   <h3 className="text-4xl font-bold mb-2">IoT Projects</h3>
   <p className="mb-10 text-gray-600">Berikut beberapa proyek IoT yang telah saya kembangkan.</p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
     {[
       {
         title: "Smart Plant Watering",
