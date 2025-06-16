@@ -131,12 +131,12 @@ export default function About() {
       {
         title: "IoT Air Quality Monitor",
         desc: "Alat pemantau kualitas udara (CO2, PM2.5) dengan notifikasi real-time ke dashboard.",
-        image: "/images/air-quality.jpg"
+        image: "/images/5.jpg"
       },
       {
         title: "RFID Door Lock System",
         desc: "Sistem pengaman pintu berbasis kartu RFID yang terintegrasi dengan ESP32.",
-        image: "/images/rfid-door-lock.jpg"
+        image: "/images/6.jpg"
       },
    
     ].map((project, idx) => (
