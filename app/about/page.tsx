@@ -93,12 +93,6 @@ export default function About() {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {[
       {
-        icon: "📘",
-        institution: "SD Negeri 01 Harapan",
-        level: "Sekolah Dasar",
-        years: "2010 - 2016"
-      },
-      {
         icon: "📗",
         institution: "SMP Negeri 2 Cipta Karya",
         level: "Sekolah Menengah Pertama",
