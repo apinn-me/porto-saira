@@ -92,14 +92,14 @@ export default function About() {
           {[
             {
               icon: "📗",
-              institution: "smp Al Washliyah 8 Medan ",
-              years: "2016 - 2019"
+              institution: "SMP Al Washliyah 8 Medan ",
+              years: "2021-2023"
             },
 
             {
               icon: "📙",
               institution: "MAN 3 Medan",
-              years: "2019 - 2022"
+              years: "2023-2026"
             }
           ].map((edu, idx) => (
             <div key={idx} className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition duration-300">
