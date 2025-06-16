@@ -25,7 +25,6 @@ export default function About() {
         <nav className="hidden md:flex gap-6 font-medium">
           <Link href="/" className="hover:text-pink-100">Home</Link>
           <Link href="/about" className="hover:text-pink-100">About</Link>
-          <Link href="/service" className="hover:text-pink-100">Service</Link>
           <Link href="/portfolio" className="hover:text-pink-100">Portfolio</Link>
         </nav>
 
@@ -44,7 +43,6 @@ export default function About() {
           <div className="absolute top-full left-0 w-full bg-pink-400 text-white flex flex-col items-center md:hidden shadow-md z-50 py-4">
             <Link href="/" className="py-2 hover:text-pink-100" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link href="/about" className="py-2 hover:text-pink-100" onClick={() => setMenuOpen(false)}>About</Link>
-            <Link href="/service" className="py-2 hover:text-pink-100" onClick={() => setMenuOpen(false)}>Service</Link>
             <Link href="/portfolio" className="py-2 hover:text-pink-100" onClick={() => setMenuOpen(false)}>Portfolio</Link>
             <Link href="#contact" className="py-2 mt-2 bg-white text-pink-500 rounded-full px-4 py-1 shadow hover:bg-pink-200 transition font-semibold" onClick={() => setMenuOpen(false)}>
               Contact

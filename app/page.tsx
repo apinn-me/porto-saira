@@ -32,7 +32,6 @@ export default function Home() {
         <nav className="hidden md:flex gap-6 font-medium">
           <Link href="/" className="hover:text-pink-100">Home</Link>
           <Link href="/about" className="hover:text-pink-100">About</Link>
-          <Link href="/service" className="hover:text-pink-100">Service</Link>
           <Link href="/portfolio" className="hover:text-pink-100">Portfolio</Link>
         </nav>
         <a href="#" className="hidden sm:inline-block bg-white text-pink-500 px-4 py-2 rounded-full shadow hover:bg-pink-200 transition font-semibold">
