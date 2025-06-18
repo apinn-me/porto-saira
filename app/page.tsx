@@ -174,7 +174,7 @@ export default function Home() {
     <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
       GitHub
     </a>
-    <a href="sairasaisabillah88@gmail.com" className="hover:text-pink-200">
+      <a href="mailto:sairasaisabillah88@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
       Email
     </a>
     <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
