@@ -154,13 +154,13 @@ export default function About() {
   <h4 className="text-xl font-semibold mb-4">Hubungi Saya</h4>
   <p className="mb-6">Ingin berkolaborasi dalam proyek IoT atau teknologi lainnya? Yuk diskusi!</p>
   <div className="flex flex-wrap justify-center gap-4 text-white mb-6">
-    <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
-      LinkedIn
+    <a href="https://www.instagram.com/meaane_/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
+      Instagram
     </a>
     <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
       GitHub
     </a>
-    <a href="mailto:email@example.com" className="hover:text-pink-200">
+    <a href="sairasaisabillah88@gmail.com" className="hover:text-pink-200">
       Email
     </a>
     <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
