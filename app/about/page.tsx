@@ -19,7 +19,7 @@ export default function About() {
       {/* Navbar */}
       <header className="relative flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 shadow-md">
         <h1 className="text-2xl font-bold text-white">
-          <span className="bg-gradient-to-r from-pink-100 to-pink-300 text-transparent bg-clip-text">IOT</span>Space
+          <span className="bg-gradient-to-r from-pink-100 to-pink-300 text-transparent bg-clip-text">I</span>oThings
         </h1>
 
         <nav className="hidden md:flex gap-6 font-medium">
