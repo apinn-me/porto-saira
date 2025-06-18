@@ -149,17 +149,26 @@ export default function About() {
 
 
 
-      {/* Footer */}
-      <footer id="contact" className="bg-pink-500 py-12 px-4 sm:px-6 lg:px-24 text-center">
-        <h4 className="text-xl font-semibold mb-4">Hubungi Saya</h4>
-        <p className="mb-6">Ingin berkolaborasi dalam proyek IoT atau teknologi lainnya? Yuk diskusi!</p>
-        <div className="flex flex-wrap justify-center gap-4 text-white mb-6">
-          {['LinkedIn', 'GitHub', 'Email', 'WhatsApp'].map((platform, i) => (
-            <a key={i} href="#" className="hover:text-pink-200">{platform}</a>
-          ))}
-        </div>
-        <p className="text-sm">&copy; 2025 IOTSpace. All rights reserved.</p>
-      </footer>
-    </div>
+    {/* Footer */}
+<footer id="contact" className="bg-pink-500 py-12 px-4 sm:px-6 lg:px-24 text-center">
+  <h4 className="text-xl font-semibold mb-4">Hubungi Saya</h4>
+  <p className="mb-6">Ingin berkolaborasi dalam proyek IoT atau teknologi lainnya? Yuk diskusi!</p>
+  <div className="flex flex-wrap justify-center gap-4 text-white mb-6">
+    <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
+      LinkedIn
+    </a>
+    <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
+      GitHub
+    </a>
+    <a href="mailto:email@example.com" className="hover:text-pink-200">
+      Email
+    </a>
+    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-pink-200">
+      WhatsApp
+    </a>
+  </div>
+  <p className="text-sm">&copy; 2025 IOTSpace. All rights reserved.</p>
+</footer>
+  </div>
   );
 }
